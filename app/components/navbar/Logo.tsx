@@ -9,12 +9,11 @@ const Logo = () => {
       <Image 
             onClick={()=>router.push("/")}
             alt="Logo"
-            className="hidden md:block cursor-pointer"
+            className="hidden md:block cursor-pointer object-cover"
             height="100"
             width="100"
             src="./images/air_bnb_logo.svg"
       />
-
     </div>
   )
 }

@@ -9,13 +9,12 @@ interface AvatarProps {
 const Avatar:React.FC<AvatarProps> = ({src}) => {
   return (
       <Image 
-            className="rounded-full w-full h-full"
-            height="30"
-            width="30"
-            objectFit="contain"
+            className="rounded-full w-[30px] h-[30px] object-contain"
             alt="avatar"
-            src={src || "/images/avatar.jpg"}
-            />
+            src={src || "/images/no-user.jpg"}
+            width={30}
+            height={30}
+      />
   )
 }
 
